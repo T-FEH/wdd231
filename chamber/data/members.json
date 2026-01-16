@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Lagos Tech Hub",
+    "address": "123 Tech Street, Lagos, Nigeria",
+    "phone": "+234 123 456 7890",
+    "website": "https://lagostechhub.com",
+    "image": "member1.webp",
+    "membershipLevel": 3,
+    "description": "A hub for technology startups and innovation."
+  },
+  {
+    "name": "Nigerian Foods Ltd",
+    "address": "456 Food Ave, Lagos, Nigeria",
+    "phone": "+234 987 654 3210",
+    "website": "https://nigerianfoods.ng",
+    "image": "member2.webp",
+    "membershipLevel": 2,
+    "description": "Providing authentic Nigerian cuisine."
+  },
+  {
+    "name": "Green Energy Solutions",
+    "address": "789 Eco Blvd, Lagos, Nigeria",
+    "phone": "+234 555 123 4567",
+    "website": "https://greenenergy.ng",
+    "image": "member3.webp",
+    "membershipLevel": 1,
+    "description": "Sustainable energy solutions for Nigeria."
+  },
+  {
+    "name": "Fashion Forward",
+    "address": "101 Style Rd, Lagos, Nigeria",
+    "phone": "+234 444 987 6543",
+    "website": "https://fashionforward.ng",
+    "image": "member4.webp",
+    "membershipLevel": 3,
+    "description": "Latest trends in Nigerian fashion."
+  },
+  {
+    "name": "EduLearn Academy",
+    "address": "202 Learn Ln, Lagos, Nigeria",
+    "phone": "+234 333 456 7890",
+    "website": "https://edulearn.ng",
+    "image": "member5.webp",
+    "membershipLevel": 2,
+    "description": "Online education platform."
+  },
+  {
+    "name": "BuildWell Construction",
+    "address": "303 Build St, Lagos, Nigeria",
+    "phone": "+234 222 654 3210",
+    "website": "https://buildwell.ng",
+    "image": "member6.webp",
+    "membershipLevel": 1,
+    "description": "Quality construction services."
+  },
+  {
+    "name": "HealthFirst Clinic",
+    "address": "404 Health Ave, Lagos, Nigeria",
+    "phone": "+234 111 123 4567",
+    "website": "https://healthfirst.ng",
+    "image": "member7.webp",
+    "membershipLevel": 3,
+    "description": "Comprehensive healthcare services."
+  }
+]

@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav a:hover {
+    background-color: #004080;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+}
