@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav a:hover {
+    background-color: #0056b3;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social-links {
+    order: 1;
+  }
+
+  .copyright {
+    order: 2;
+  }
+
+  .last-mod {
+    order: 3;
+  }
+}
