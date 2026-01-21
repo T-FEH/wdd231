@@ -207,6 +207,11 @@ footer {
   position: relative;
   text-align: center;
   color: #ffffff;
+  background-image: url(images/hero.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px; /* Minimum height for responsiveness */
 }
 
 .hero::before {
@@ -218,13 +223,6 @@ footer {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 0;
 }
 
 .hero h1, .hero p {
