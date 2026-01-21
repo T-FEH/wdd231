@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lagos Chamber of Commerce - Directory</title>
-  <meta name="description" content="Directory of member businesses in the Lagos Chamber of Commerce. Find local companies, contact info, and membership details.">
+  <title>Lagos Chamber of Commerce - Home</title>
+  <meta name="description" content="Welcome to the Lagos Chamber of Commerce. Discover local businesses, events, and opportunities in Lagos, Nigeria.">
   <meta name="author" content="Boluwatife Alewi">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,12 +37,33 @@
     </nav>
   </header>
   <main>
-    <h1>Business Directory</h1>
-    <div class="buttons">
-      <button id="grid-view" class="active">Grid View</button>
-      <button id="list-view">List View</button>
-    </div>
-    <div id="members-container" class="members"></div>
+    <section class="hero">
+      <img src="images/hero.svg" alt="Lagos skyline">
+      <h1>Welcome to Lagos Chamber of Commerce</h1>
+      <p>Supporting local businesses and fostering community growth in Lagos, Nigeria.</p>
+      <a href="#" class="cta-button">Join the Chamber</a>
+    </section>
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div class="event">
+        <h3>Business Networking Mixer</h3>
+        <p>Date: January 25, 2026</p>
+        <p>Location: Lagos Convention Center</p>
+      </div>
+      <div class="event">
+        <h3>Entrepreneurship Workshop</h3>
+        <p>Date: February 5, 2026</p>
+        <p>Location: Online</p>
+      </div>
+    </section>
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div id="weather-info"></div>
+    </section>
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights-container"></div>
+    </section>
   </main>
   <footer>
     <div class="footer-content">
@@ -60,6 +81,6 @@
   </footer>
   <script src="scripts/navigation.js"></script>
   <script src="scripts/date.js"></script>
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/home.js"></script>
 </body>
 </html>
