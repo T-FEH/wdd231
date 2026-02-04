@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagos Chamber of Commerce - Join</title>
+  <meta name="description" content="Join the Lagos Chamber of Commerce. Apply for membership and discover the benefits of becoming a member.">
+  <meta name="author" content="Boluwatife Alewi">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></noscript>
+  <meta property="og:title" content="Lagos Chamber of Commerce - Join">
+  <meta property="og:description" content="Apply to join the Lagos Chamber of Commerce and support local businesses in Lagos, Nigeria.">
+  <meta property="og:image" content="https://T-FEH.github.io/wdd231/chamber/images/logo.svg">
+  <meta property="og:url" content="https://T-FEH.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+<body class="join-page">
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Lagos Chamber Logo" width="40" height="40">
+      <span>Lagos Chamber of Commerce</span>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="join-form">
+      <h1>Join the Lagos Chamber of Commerce</h1>
+      <p>Fill out the form below to apply for membership. Membership levels offer various benefits to support your business.</p>
+      <form id="join-form" method="get" action="thankyou.html" novalidate>
+        <label for="fname">First Name <span class="required">*</span></label>
+        <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required>
+
+        <label for="lname">Last Name <span class="required">*</span></label>
+        <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required>
+
+        <label for="title">Organizational Title</label>
+        <input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" placeholder="e.g., Marketing Manager">
+
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
+
+        <label for="phone">Mobile Phone Number <span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+
+        <label for="business">Business/Organization Name <span class="required">*</span></label>
+        <input type="text" id="business" name="business" title="Business/Organization Name" autocomplete="organization" required>
+
+        <label for="membership">Membership Level <span class="required">*</span></label>
+        <select id="membership" name="membership" title="Membership Level" required>
+          <option value="">Select a level</option>
+          <option value="np">NP Membership (Non-Profit, No Fee)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+
+        <label for="description">Business/Organization Description</label>
+        <textarea id="description" name="description" title="Business/Organization Description" rows="4"></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+    <aside class="membership-levels">
+      <div class="level-card" id="np-card">
+        <h3>NP Membership</h3>
+        <p>For non-profit organizations. No fee.</p>
+        <a href="#" onclick="openModal('np-modal')">Learn More</a>
+      </div>
+      <div class="level-card" id="bronze-card">
+        <h3>Bronze Membership</h3>
+        <p>Basic benefits for small businesses.</p>
+        <a href="#" onclick="openModal('bronze-modal')">Learn More</a>
+      </div>
+      <div class="level-card" id="silver-card">
+        <h3>Silver Membership</h3>
+        <p>Enhanced support and networking.</p>
+        <a href="#" onclick="openModal('silver-modal')">Learn More</a>
+      </div>
+      <div class="level-card" id="gold-card">
+        <h3>Gold Membership</h3>
+        <p>Premium benefits including spotlights.</p>
+        <a href="#" onclick="openModal('gold-modal')">Learn More</a>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <p>Lagos Chamber of Commerce<br>
+        123 Commerce St, Lagos, Nigeria<br>
+        info@lagoschamber.ng | (234) 123-4567</p>
+      </div>
+      <div class="dev-info">
+        <p><span id="copyright-year"></span> Lagos Chamber of Commerce<br>
+        Boluwatife Alewi | WDD 231<br>
+        <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="np-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('np-modal')">&times;</span>
+      <h2>NP Membership Benefits</h2>
+      <p>Free membership for non-profit organizations. Includes access to networking events and basic resources.</p>
+    </div>
+  </div>
+  <div id="bronze-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+      <h2>Bronze Membership Benefits</h2>
+      <p>Discounts on events, access to member directory, and basic advertising opportunities.</p>
+    </div>
+  </div>
+  <div id="silver-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+      <h2>Silver Membership Benefits</h2>
+      <p>All Bronze benefits plus training workshops, priority event registration, and spotlight features.</p>
+    </div>
+  </div>
+  <div id="gold-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+      <h2>Gold Membership Benefits</h2>
+      <p>All Silver benefits plus exclusive events, premium advertising, and guaranteed home page spotlights.</p>
+    </div>
+  </div>
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</body>
+</html></content>
+<parameter name="filePath">/home/tife/wdd231/chamber/join.html

@@ -42,4 +42,39 @@
   .footer-content {
     flex-direction: row;
   }
+
+  /* Home Page Larger Styles */
+  #spotlights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  /* Join Page Larger Styles */
+  body.join-page main {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .join-form {
+    flex: 1;
+  }
+
+  .membership-levels {
+    flex: 0 0 300px;
+    flex-direction: column;
+  }
+
+  /* Directory Larger Styles */
+  .members {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
 }

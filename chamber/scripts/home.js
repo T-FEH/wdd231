@@ -56,12 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function displaySpotlights(spotlights) {
     const container = document.getElementById('spotlights-container');
+    if (!container) {
+      console.error('Spotlights container not found');
+      return;
+    }
     container.innerHTML = '';
-    spotlights.forEach(member => {
+    spotlights.forEach((member, index) => {
       const card = document.createElement('div');
       card.className = 'spotlight-card';
+      const lazy = index > 0 ? ' loading="lazy"' : '';
       card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name} logo" width="300" height="200">
+        <img src="images/${member.image}" alt="${member.name} logo" width="300" height="200"${lazy}>
         <h3>${member.name}</h3>
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
