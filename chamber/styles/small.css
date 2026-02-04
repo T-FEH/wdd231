@@ -361,12 +361,21 @@ footer {
 
 .modal-content {
   background-color: #ffffff;
+  color: #333333;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   max-width: 500px;
   border-radius: 8px;
+}
+
+.modal-content h2 {
+  color: #0056b3;
+}
+
+.modal-content p {
+  color: #333333;
 }
 
 .close {
