@@ -35,22 +35,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Modal functions
-  window.openModal = function(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = 'block';
-  };
-
-  window.closeModal = function(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = 'none';
-  };
-
-  // Close modal on outside click
-  window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-      event.target.style.display = 'none';
+  // Modal functions using event delegation
+  document.addEventListener('click', function(e) {
+    // Open modal
+    if (e.target.classList.contains('modal-trigger')) {
+      e.preventDefault();
+      const modalId = e.target.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'block';
+      }
     }
-  };
+    
+    // Close modal
+    if (e.target.classList.contains('close')) {
+      const modalId = e.target.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'none';
+      }
+    }
+    
+    // Close modal on outside click
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  });
 });</content>
 <parameter name="filePath">/home/tife/wdd231/chamber/scripts/join.js
