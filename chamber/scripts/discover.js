@@ -20,13 +20,14 @@ localStorage.setItem('lastVisit', now);
 
 // Build discover cards
 const grid = document.querySelector('.discover-grid');
-discoverData.forEach(item => {
+discoverData.forEach((item, index) => {
   const card = document.createElement('div');
   card.className = 'discover-card';
+  const isFirstImage = index === 0;
   card.innerHTML = `
     <h2>${item.name}</h2>
     <figure>
-      <img src="${item.image}" alt="${item.name}" loading="lazy" width="300" height="200">
+      <img src="${item.image}" alt="${item.name}" ${isFirstImage ? 'fetchpriority="high"' : 'loading="lazy"'} width="300" height="200">
     </figure>
     <address>${item.address}</address>
     <p>${item.description}</p>

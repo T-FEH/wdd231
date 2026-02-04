@@ -82,6 +82,7 @@
     grid-template-areas:
       "a b c d"
       "e f g h";
+    min-height: 1000px;
   }
 
   .discover-card img:hover {
