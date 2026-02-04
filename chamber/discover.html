@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lagos Chamber of Commerce - Directory</title>
-  <meta name="description" content="Directory of member businesses in the Lagos Chamber of Commerce. Find local companies, contact info, and membership details.">
+  <title>Lagos Chamber of Commerce - Discover</title>
+  <meta name="description" content="Discover Lagos: Explore attractions, culture, and opportunities in Lagos, Nigeria through the Lagos Chamber of Commerce.">
   <meta name="author" content="Boluwatife Alewi">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></noscript>
-  <meta property="og:title" content="Lagos Chamber of Commerce - Directory">
-  <meta property="og:description" content="Directory of member businesses in the Lagos Chamber of Commerce. Find local companies, contact info, and membership details.">
-  <meta property="og:image" content="https://T-FEH.github.io/wdd231/chamber/images/logo.svg">
-  <meta property="og:url" content="https://T-FEH.github.io/wdd231/chamber/directory.html">
+  <meta property="og:title" content="Discover Lagos - Lagos Chamber of Commerce">
+  <meta property="og:description" content="Explore the best of Lagos: museums, parks, and cultural sites. Join the Lagos Chamber of Commerce for local insights.">
+  <meta property="og:image" content="https://T-FEH.github.io/wdd231/chamber/images/hero.svg">
+  <meta property="og:url" content="https://T-FEH.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
 </head>
 <body>
   <header>
@@ -42,12 +43,14 @@
     </nav>
   </header>
   <main>
-    <h1>Business Directory</h1>
-    <div class="buttons">
-      <button id="grid-view" class="active">Grid View</button>
-      <button id="list-view">List View</button>
-    </div>
-    <div id="members-container" class="members"></div>
+    <section class="visit-message">
+      <p id="visit-info"></p>
+    </section>
+    <section class="discover">
+      <h1>Discover Lagos</h1>
+      <p>Explore the vibrant attractions and cultural landmarks of Lagos, Nigeria. From nature reserves to historical sites, discover what makes Lagos a unique and dynamic city.</p>
+      <div class="discover-grid"></div>
+    </section>
   </main>
   <footer>
     <div class="footer-content">

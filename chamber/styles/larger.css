@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .hamburger {
     display: none;
   }
@@ -76,5 +76,16 @@
   /* Directory Larger Styles */
   .members {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .discover-grid {
+    grid-template-areas:
+      "a b c d"
+      "e f g h";
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
   }
 }
