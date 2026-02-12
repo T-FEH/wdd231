@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - Urban Harvest Collective</title>
+  <meta name="description" content="Connect with urban gardeners, share success stories, find local community gardens, and join the sustainable gardening movement.">
+  <meta name="author" content="Boluwatife Alewi">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Community - Urban Harvest Collective">
+  <meta property="og:description" content="Join urban gardeners worldwide. Share stories and find local community gardens near you.">
+  <meta property="og:image" content="https://T-FEH.github.io/wdd231/final/images/hero.jpg">
+  <meta property="og:url" content="https://T-FEH.github.io/wdd231/final/community.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+  <script type="module" src="scripts/community.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Urban Harvest Collective Logo" width="50" height="50">
+      <span>Urban Harvest Collective</span>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="community.html" class="active">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Join Our Community</h1>
+      <p>Connect, share, and grow together</p>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+      <h2>Success Stories</h2>
+      <p>Real urban gardeners sharing their journeys from seed to harvest</p>
+      
+      <div class="stories-grid">
+        <article class="story-card">
+          <h3>From Balcony to Bounty</h3>
+          <p class="story-author">— Sarah M., Brooklyn, NY</p>
+          <p class="story-content">
+            "I started with just 3 tomato plants on my 4x6 balcony. Now I grow 12 varieties of vegetables 
+            and herbs year-round! Last summer, I harvested 40 pounds of tomatoes and didn't buy salad greens 
+            for 6 months. Urban gardening changed how I eat and think about food."
+          </p>
+          <div class="story-stats">
+            <span>🌱 Space: 24 sq ft</span>
+            <span>📅 Growing: 2 years</span>
+            <span>🥬 Crops: 12 varieties</span>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <h3>Community Garden Revolution</h3>
+          <p class="story-author">— Marcus J., Oakland, CA</p>
+          <p class="story-content">
+            "Our neighborhood started a vacant lot garden in 2023. Now 45 families grow food together! 
+            We've turned a blighted space into a thriving hub where kids learn about nature, seniors 
+            share wisdom, and everyone eats fresh. It's more than gardening—it's community building."
+          </p>
+          <div class="story-stats">
+            <span>👥 Members: 45 families</span>
+            <span>📍 Location: 0.5 acre lot</span>
+            <span>🎉 Events: Monthly potlucks</span>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <h3>Windowsill Herb Haven</h3>
+          <p class="story-author">— Elena R., Chicago, IL</p>
+          <p class="story-content">
+            "Living in a studio apartment, I thought gardening was impossible. Then I discovered windowsill 
+            herbs! Now I grow basil, cilantro, mint, thyme, and chives year-round. I save $30/month on herbs 
+            and my cooking has never been better. Small spaces = big possibilities!"
+          </p>
+          <div class="story-stats">
+            <span>🪟 Space: 3 windowsills</span>
+            <span>🌿 Herbs: 8 types</span>
+            <span>💰 Savings: $360/year</span>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <h3>Rooftop Farm Dreams</h3>
+          <p class="story-author">— David L., Seattle, WA</p>
+          <p class="story-content">
+            "Convinced my building to let me use the rooftop. Started with containers, now have 15 raised 
+            beds growing food for 8 neighboring families. We practice rainwater harvesting, composting, 
+            and pollinator support. It's a model for urban agriculture that other buildings are copying!"
+          </p>
+          <div class="story-stats">
+            <span>🏢 Space: Rooftop garden</span>
+            <span>👨‍👩‍👧‍👦 Serving: 8 families</span>
+            <span>♻️ Sustainable: 100%</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Share Your Story Form -->
+    <section class="share-story-section">
+      <h2>Share Your Gardening Story</h2>
+      <p>Inspire others by sharing your urban gardening journey!</p>
+      
+      <form id="story-form" action="submission.html" method="get">
+        <div class="form-row">
+          <label for="name">Your Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="city">City, State <span class="required">*</span></label>
+          <input type="text" id="city" name="city" placeholder="e.g., Portland, OR" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="garden-type">Garden Type <span class="required">*</span></label>
+          <select id="garden-type" name="gardenType" required>
+            <option value="">Select garden type</option>
+            <option value="balcony">Balcony/Patio</option>
+            <option value="windowsill">Windowsill/Indoor</option>
+            <option value="rooftop">Rooftop</option>
+            <option value="backyard">Backyard/Yard</option>
+            <option value="community">Community Garden</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="experience">Years Growing <span class="required">*</span></label>
+          <input type="number" id="experience" name="experience" min="0" max="50" required>
+        </div>
+
+        <div class="form-row">
+          <label for="story-title">Story Title <span class="required">*</span></label>
+          <input type="text" id="story-title" name="storyTitle" placeholder="e.g., My First Tomato Harvest" required>
+        </div>
+
+        <div class="form-row">
+          <label for="story-content">Your Story <span class="required">*</span></label>
+          <textarea id="story-content" name="storyContent" rows="6" required 
+                    placeholder="Share your challenges, successes, tips, and what urban gardening means to you..."></textarea>
+        </div>
+
+        <div class="form-row checkbox-group">
+          <label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            Subscribe to monthly gardening tips newsletter
+          </label>
+        </div>
+
+        <div class="form-row checkbox-group">
+          <label>
+            <input type="checkbox" id="consent" name="consent" value="yes" required>
+            I consent to sharing my story publicly <span class="required">*</span>
+          </label>
+        </div>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+
+        <button type="submit" class="cta-button">Submit Your Story</button>
+      </form>
+    </section>
+
+    <!-- Local Gardens Finder -->
+    <section class="local-gardens">
+      <h2>Find Community Gardens Near You</h2>
+      <p>Connect with local gardening communities and shared growing spaces</p>
+      
+      <div class="gardens-list">
+        <div class="garden-card">
+          <h3>American Community Gardening Association</h3>
+          <p class="garden-location">📍 Nationwide</p>
+          <p>Find community gardens across the US and Canada. Search by zip code or city name.</p>
+          <a href="https://www.communitygarden.org/find-a-garden" target="_blank" rel="noopener" class="garden-link">Search Gardens →</a>
+        </div>
+
+        <div class="garden-card">
+          <h3>GrowNYC Community Gardens</h3>
+          <p class="garden-location">📍 New York City</p>
+          <p>Network of over 90 community gardens in NYC. Offers workshops, volunteer days, and plot memberships.</p>
+          <a href="https://www.grownyc.org/gardens" target="_blank" rel="noopener" class="garden-link">Visit Website →</a>
+        </div>
+
+        <div class="garden-card">
+          <h3>LocalHarvest Community Gardens</h3>
+          <p class="garden-location">📍 United States</p>
+          <p>Searchable database of community gardens, CSAs, and farmers markets across America.</p>
+          <a href="https://www.localharvest.org/community-supported-agriculture.jsp" target="_blank" rel="noopener" class="garden-link">Find Gardens →</a>
+        </div>
+
+        <div class="garden-card">
+          <h3>Urban Farms & Gardens Map</h3>
+          <p class="garden-location">📍 Global</p>
+          <p>Interactive map of urban farms and community gardens worldwide. Add your own garden!</p>
+          <a href="https://urbanfarmingfood.com/map" target="_blank" rel="noopener" class="garden-link">Explore Map →</a>
+        </div>
+
+        <div class="garden-card">
+          <h3>Master Gardener Programs</h3>
+          <p class="garden-location">📍 Nationwide (USA)</p>
+          <p>Find local extension offices offering Master Gardener training and community garden support.</p>
+          <a href="https://mastergardener.extension.org/" target="_blank" rel="noopener" class="garden-link">Find Local Program →</a>
+        </div>
+
+        <div class="garden-card">
+          <h3>Nextdoor Neighborhood Gardens</h3>
+          <p class="garden-location">📍 Your Neighborhood</p>
+          <p>Connect with neighbors to find or start community gardens in your local area.</p>
+          <a href="https://nextdoor.com/" target="_blank" rel="noopener" class="garden-link">Join Nextdoor →</a>
+        </div>
+      </div>
+
+      <div class="find-more">
+        <p>Can't find a garden near you? Start your own!</p>
+        <a href="https://www.communitygarden.org/resources" target="_blank" rel="noopener" class="cta-button">
+          Get Started Guide
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <p>&copy; <span id="currentYear"></span> Urban Harvest Collective | Boluwatife Alewi | WDD 231</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#" id="video-link">Project Video</a></p>
+      </div>
+      <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

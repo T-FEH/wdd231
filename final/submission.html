@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Received - Urban Harvest Collective</title>
+  <meta name="description" content="Your story submission has been received. Thank you for sharing your urban gardening journey!">
+  <meta name="author" content="Boluwatife Alewi">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/submission.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Urban Harvest Collective Logo" width="50" height="50">
+      <span>Urban Harvest Collective</span>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="submission-confirmation">
+      <div class="success-icon">✅</div>
+      <h1>Thank You for Sharing Your Story!</h1>
+      <p>Your submission has been received and will be reviewed by our team.</p>
+    </section>
+
+    <section class="submission-details">
+      <h2>Submission Summary</h2>
+      <div id="submission-data" class="data-display">
+        <!-- Dynamically populated by JavaScript -->
+      </div>
+    </section>
+
+    <section class="next-steps">
+      <h2>What Happens Next?</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <h3>1. Review Process</h3>
+          <p>Our team will review your story within 3-5 business days to ensure it meets our community guidelines.</p>
+        </div>
+        <div class="step-card">
+          <h3>2. Publication</h3>
+          <p>Approved stories will be featured on our Community page and shared with our newsletter subscribers.</p>
+        </div>
+        <div class="step-card">
+          <h3>3. Stay Connected</h3>
+          <p>If you subscribed to our newsletter, you'll receive monthly gardening tips and community updates.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="continue-exploring">
+      <h2>Continue Exploring</h2>
+      <div class="cta-grid">
+        <a href="index.html" class="cta-card">
+          <h3>🏡 Home</h3>
+          <p>Return to the homepage</p>
+        </a>
+        <a href="resources.html" class="cta-card">
+          <h3>📚 Resources</h3>
+          <p>Browse our plant database</p>
+        </a>
+        <a href="community.html" class="cta-card">
+          <h3>👥 Community</h3>
+          <p>Read more success stories</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <p>&copy; <span id="currentYear"></span> Urban Harvest Collective | Boluwatife Alewi | WDD 231</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#" id="video-link">Project Video</a></p>
+      </div>
+      <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

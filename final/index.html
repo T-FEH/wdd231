@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Harvest Collective - Sustainable Urban Gardening</title>
+  <meta name="description" content="Discover sustainable urban gardening practices, grow your own food in the city, and connect with community gardens through Urban Harvest Collective.">
+  <meta name="author" content="Boluwatife Alewi">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Urban Harvest Collective - Sustainable Urban Gardening">
+  <meta property="og:description" content="Empower city dwellers to grow food, reduce carbon footprints, and build community connections through sustainable urban gardening.">
+  <meta property="og:image" content="https://T-FEH.github.io/wdd231/final/images/hero.jpg">
+  <meta property="og:url" content="https://T-FEH.github.io/wdd231/final/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+  <script type="module" src="scripts/main.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Urban Harvest Collective Logo" width="50" height="50">
+      <span>Urban Harvest Collective</span>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Grow Your Future in the City</h1>
+        <p>Transform your urban space into a thriving garden. Sustainable, simple, and rewarding.</p>
+        <a href="#get-started" class="cta-button">Start Growing Today</a>
+      </div>
+    </section>
+
+    <!-- Weather Widget -->
+    <section class="weather-widget">
+      <h2 class="visually-hidden">Current Weather</h2>
+      <div id="weather-container">
+        <p>Loading weather data...</p>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <h2>Why Urban Gardening?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>🌱 Fresh & Healthy</h3>
+          <p>Grow organic produce right at home. No pesticides, just pure nutrition from seed to table.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🌍 Eco-Friendly</h3>
+          <p>Reduce your carbon footprint by eliminating food miles and packaging waste.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>💰 Save Money</h3>
+          <p>Cut grocery costs while enjoying the freshest herbs, vegetables, and fruits year-round.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🧘 Reduce Stress</h3>
+          <p>Gardening is therapeutic. Connect with nature and find peace in your urban oasis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="get-started" class="getting-started">
+      <h2>Getting Started Guide</h2>
+      <p>New to urban gardening? Follow these simple steps to create your first garden:</p>
+      <ol class="steps-list">
+        <li><strong>Assess Your Space:</strong> Check sunlight (4-8 hours ideal), water access, and container options (balcony, windowsill, rooftop).</li>
+        <li><strong>Choose Easy Plants:</strong> Start with beginner-friendly options like herbs (basil, mint), leafy greens (lettuce, spinach), or tomatoes.</li>
+        <li><strong>Select Containers:</strong> Use pots with drainage holes. Minimum 6-12 inches deep for most plants.</li>
+        <li><strong>Prepare Quality Soil:</strong> Use potting mix (not garden soil). Add compost for nutrients.</li>
+        <li><strong>Water Wisely:</strong> Most plants need daily watering in containers. Check soil moisture before watering.</li>
+        <li><strong>Monitor & Harvest:</strong> Watch for pests, adjust light/water as needed. Harvest regularly to encourage growth!</li>
+      </ol>
+      <button class="cta-button" id="explore-plants">Explore Plant Recommendations</button>
+    </section>
+
+    <!-- Featured Plants Preview -->
+    <section class="featured-plants">
+      <h2>Beginner-Friendly Plants</h2>
+      <p>Click a plant to learn more about growing requirements and tips.</p>
+      <div id="plants-grid" class="plants-grid">
+        <!-- Dynamically loaded from plants.json -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <p>&copy; <span id="currentYear"></span> Urban Harvest Collective | Boluwatife Alewi | WDD 231</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#" id="video-link">Project Video</a></p>
+      </div>
+      <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <!-- Plant Detail Modal -->
+  <div id="plant-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modal-body">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
