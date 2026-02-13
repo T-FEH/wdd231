@@ -6,7 +6,7 @@ body {
   padding: 1rem;
   line-height: 1.6;
   background-color: #F5F5DC;
-  color: #333333;
+  color: #1a1a1a;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #333;
+  color: #1a1a1a;
   margin-top: 2rem;
   font-size: 1.5rem;
 }
@@ -30,12 +30,14 @@ li {
 }
 
 a {
-  color: #2E8B57;
+  color: #1e6b47;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #165239;
 }
 
 .back-link {
@@ -44,12 +46,13 @@ a:hover {
 }
 
 header {
-  background-color: #2E8B57;
+  background-color: #1e6b47;
   color: #FFFFFF;
   padding: 1.5rem;
   margin: -2rem auto 2rem;
   max-width: 800px;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
@@ -61,5 +64,50 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   margin-top: 3rem;
-  border-top: 2px solid #2E8B57;
+  border-top: 2px solid #1e6b47;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  body {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  
+  header {
+    margin: -1rem -0.5rem 1.5rem;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  body {
+    padding: 1.5rem;
+  }
+  
+  header {
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    padding: 2rem;
+  }
+  
+  header {
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+  }
 }
