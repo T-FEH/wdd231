@@ -31,7 +31,7 @@ export function openPlantModal(plant) {
   if (!modal || !modalBody) return;
 
   modalBody.innerHTML = `
-    <h2>${plant.name}</h2>
+    <h2 id="modal-title">${plant.name}</h2>
     <div class="plant-details">
       <div class="detail-row">
         <span class="detail-label">Category:</span>
